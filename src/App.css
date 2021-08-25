@@ -1,4 +1,28 @@
-.App {
+h1, p {
+  font-family: Lato;
+}
+
+.grid {
+ display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr) ;
+    /* justify-content: center; */
+  }
+}
+
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns:  .8fr ;
+    justify-content: center;
+  }
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +59,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
